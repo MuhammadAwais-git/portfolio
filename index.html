@@ -6,77 +6,197 @@
   <title>Muhammad Awais - Android Developer</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
       margin: 0;
       padding: 0;
       line-height: 1.6;
-      background: #f4f4f4;
-      color: #333;
+      background: #0d1117;
+      color: #e6edf3;
     }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
     header {
-      background: #2d3436;
-      color: #fff;
-      padding: 2rem 1rem;
+      background: linear-gradient(135deg, #0d1117, #161b22);
       text-align: center;
+      padding: 3rem 1rem;
+      border-bottom: 2px solid #58a6ff;
     }
-    header h1 { margin: 0; font-size: 2.5rem; }
-    header p { margin: 0.5rem 0 0; }
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 3px solid #58a6ff;
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #58a6ff;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #c9d1d9;
+    }
 
     nav {
-      background: #636e72;
-      padding: 0.5rem;
+      background: #161b22;
       text-align: center;
+      padding: 0.8rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     nav a {
-      color: #fff;
       margin: 0 1rem;
-      text-decoration: none;
       font-weight: bold;
+      color: #e6edf3;
     }
-    nav a:hover { text-decoration: underline; }
+    nav a:hover { color: #58a6ff; }
 
     section {
       max-width: 900px;
       margin: auto;
       padding: 2rem 1rem;
-      background: #fff;
-      margin-bottom: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    h2 { color: #2d3436; margin-top: 0; }
+    h2 {
+      color: #58a6ff;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #58a6ff;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
 
+    /* Skills */
     .skills span {
       display: inline-block;
-      background: #dfe6e9;
+      background: #21262d;
       margin: 0.3rem;
-      padding: 0.4rem 0.8rem;
-      border-radius: 4px;
-      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      border: 1px solid #30363d;
+      transition: background 0.3s;
+    }
+    .skills span:hover {
+      background: #58a6ff;
+      color: #0d1117;
     }
 
-    .projects .project {
+    /* Experience */
+    .experience .job {
+      background: #161b22;
+      padding: 1.5rem;
+      border-radius: 8px;
       margin-bottom: 1.5rem;
+      border: 1px solid #30363d;
+    }
+    .experience .job h3 {
+      margin: 0;
+      color: #e6edf3;
+    }
+    .experience .job p {
+      margin: 0.3rem 0;
+      color: #c9d1d9;
+    }
+
+    /* Education */
+    .education .edu-item {
+      background: #161b22;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      border: 1px solid #30363d;
+    }
+    .education .edu-item h3 {
+      margin: 0;
+      color: #e6edf3;
+    }
+    .education .edu-item p {
+      margin: 0.3rem 0;
+      color: #c9d1d9;
+    }
+	
+	
+
+/* Highlights / Stats Section */
+.highlights {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.highlight-card {
+  display: flex;
+  justify-content: space-around;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.highlight-card .stat {
+  text-align: center;
+  flex: 1;
+}
+
+.highlight-card h3 {
+  font-size: 2rem;
+  color: #58a6ff;
+  margin: 0;
+}
+
+.highlight-card p {
+  color: #c9d1d9;
+  margin: 0.3rem 0 0;
+  font-size: 1rem;
+}
+
+
+    /* Projects */
+    .projects .project {
+      background: #161b22;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      border: 1px solid #30363d;
+      transition: transform 0.2s, border 0.2s;
+    }
+    .projects .project:hover {
+      transform: translateY(-5px);
+      border: 1px solid #58a6ff;
     }
     .projects .project h3 {
-      margin-bottom: 0.3rem;
+      margin-top: 0;
+      color: #e6edf3;
     }
-    .projects .project a {
-      color: #0984e3;
-      text-decoration: none;
+    .projects .project p { color: #c9d1d9; }
+    .projects .btn {
+      display: inline-block;
+      background: #58a6ff;
+      color: #0d1117;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-weight: bold;
+      margin-top: 0.5rem;
     }
-    .projects .project a:hover { text-decoration: underline; }
+    .projects .btn:hover { background: #1f6feb; }
 
     footer {
       text-align: center;
       padding: 1rem;
-      background: #2d3436;
-      color: #fff;
+      background: #161b22;
+      color: #8b949e;
+      margin-top: 2rem;
+      border-top: 1px solid #30363d;
     }
   </style>
 </head>
 <body>
   <header>
+    <img src="myphoto.jpg" alt="Muhammad Awais">
     <h1>Muhammad Awais</h1>
     <p>Android Developer</p>
   </header>
@@ -84,58 +204,168 @@
   <nav>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am an Android developer specializing in Kotlin, passionate about creating modern, efficient, and scalable mobile applications. My expertise includes Android Jetpack, MVVM architecture, Room Database, Retrofit, and Coroutines. I focus on building clean, maintainable code and delivering user-friendly experiences. Always eager to learn and adopt the latest tools, I strive to craft applications that solve real-world problems and provide value to users.
-    </p>
-  </section>
+ <section id="about">
+  <h2>About Me</h2>
+   <p>
+    I am an <strong>Android Developer</strong> specializing in <strong>Kotlin</strong>, passionate about building modern, efficient, and scalable mobile applications. 
+    With a strong focus on clean code and user-friendly design, I strive to deliver high-quality apps that create real value for users.
+  </p>
+  <p>
+    Along with native Android development, I also have <strong>cross-platform experience with Flutter</strong>, enabling me to develop applications that run seamlessly 
+    on both <strong>Android and iOS</strong>. This versatility allows me to deliver apps faster while ensuring consistent performance and design across platforms.
+  </p>
+  <p>
+    I am always eager to learn and adopt the latest tools and technologies, striving to create mobile solutions that solve real-world problems and provide lasting value to users.
+  </p>
+</section>
+
 
   <section id="skills" class="skills">
     <h2>Skills</h2>
     <span>Kotlin</span>
-    <span>Ads Integration</span>
     <span>Android Jetpack</span>
     <span>MVVM</span>
     <span>Room DB</span>
     <span>Retrofit</span>
     <span>Coroutines</span>
-    <span>Git/GitHub</span>
+    <span>Ads Integration</span>
     <span>REST API</span>
+    <span>Git/GitHub</span>
   </section>
+  
+
+  <section id="experience" class="experience">
+    <h2>Experience</h2>
+    <div class="job">
+      <h3>Android Developer - Grapes Technology</h3>
+      <p><em>July 2022 – DEC 2024</em></p>
+      <p>Worked on Kotlin-based apps, integrated APIs, implemented MVVM, optimized performance, and deployed apps to Play Store.</p>
+    </div>
+    <div class="job">
+      <h3>W3 Tech</h3>
+      <p><em>Jan 2025 – PRESENT</em></p>
+      <p>Assisted in developing Android apps, fixing bugs, and learning Android Jetpack libraries.</p>
+    </div>
+  </section>
+
+  <section id="education" class="education">
+    <h2>Education</h2>
+    <div class="edu-item">
+      <h3>Bachelor in Computer Science</h3>
+      <p><em>Arid Agriculture University – 2018 to 2022</em></p>
+      <p>Specialized in Mobile App Development and Software Engineering.</p>
+    </div>
+  </section>
+  
+<section id="highlights" class="highlights">
+  <div class="highlight-card">
+    <div class="stat">
+      <h3>15+</h3>
+      <p>Projects Delivered</p>
+    </div>
+    <div class="stat">
+      <h3>3+</h3>
+      <p>Years Experience</p>
+    </div>
+    <div class="stat">
+     <h3>8+</h3>
+  <p>Apps Published</p>
+    </div>
+  </div>
+</section>
 
   <section id="projects" class="projects">
     <h2>Projects</h2>
-    <div class="project">
-      <h3>Expense Manager App</h3>
-      <p>A budget tracker built with Kotlin, Room, and MVVM.</p>
-      <a href="https://github.com/yourusername/expense-manager" target="_blank">View on GitHub</a>
-    </div>
-    <div class="project">
-      <h3>Weather App</h3>
-      <p>Real-time weather updates using Retrofit and OpenWeather API.</p>
-      <a href="https://github.com/yourusername/weather-app" target="_blank">View on GitHub</a>
-    </div>
+    <section id="projects" class="projects">
+  <h2>Projects</h2>
+
+  <div class="project">
+   
+  <div class="project">
+    <h3><strong>Universal TV Remote</strong></h3>
+    <p>A smart TV controller app that connects with TVs via Bluetooth/Wi-Fi to perform actions like volume control, channel switching, and navigation. Designed for seamless remote control experiences.</p>
+    <a href="https://play.google.com/store/apps/details?id=com.universal.remote.tv.bluetoothkeyboard.mouse&hl=en_US&gl=IN" target="_blank" class="btn">View on Play Store</a>
+  </div>
+
+  <div class="project">
+    <h3><strong>All Language Translator</strong></h3>
+    <p>A versatile translator app supporting text, voice, and photo translation across multiple languages. Ideal for travelers and learners, making global communication easier.</p>
+    <a href="https://play.google.com/store/apps/details?id=com.language.translate.all.voice.translator.phototranslator" target="_blank" class="btn">View on Play Store</a>
+  </div>
+
+  <div class="project">
+    <h3><strong>Background Remover</strong></h3>
+    <p>An AI-powered tool that removes photo backgrounds in seconds, allowing users to create professional, clean, and customizable images for social media or business use.</p>
+  </div>
+
+  <div class="project">
+    <h3><strong>Calling Theme</strong></h3>
+    <p>A customizable dialer app with stunning themes for incoming and outgoing calls. Provides a personalized calling experience with vibrant designs and smooth performance.</p>
+  </div>
+
+  <div class="project">
+    <h3><strong>Live Street View App</strong></h3>
+    <p>A navigation app that lets users explore live street views, maps, and 360° locations worldwide. Perfect for travelers and explorers who want real-time street-level navigation.</p>
+    <a href="https://play.google.com/store/apps/details?id=com.streetview.map.navigation.live.earthmap" target="_blank" class="btn">View on Play Store</a>
+  </div>
+
+  <div class="project">
+    <h3><strong>Alarms Clock App</strong></h3>
+    <p>A smart alarm clock app featuring multiple alarms, custom ringtones, and scheduling options. Designed to improve productivity and help users manage their daily routine effectively.</p>
+  </div>
+
+  <div class="project">
+    <h3><strong>Phone Number Locator</strong></h3>
+    <p>A mobile tracker that helps locate phone numbers and display their region information. Provides reliable tracking features with a focus on privacy and ease of use.</p>
+    <a href="https://play.google.com/store/apps/details?id=caller.location.mobile.tracker.phone.locator" target="_blank" class="btn">View on Play Store</a>
+  </div>
+
+  <div class="project">
+    <h3><strong>AI Photo Enhancer</strong></h3>
+    <p>A photo enhancement app that sharpens, unblurs, and improves image quality using AI technology. Ideal for reviving old or low-quality photos with just one click.</p>
+    <a href="https://play.google.com/store/apps/details?id=com.dw.aiphotoenhancer.unblur.editor" target="_blank" class="btn">View on Play Store</a>
+  </div>
+
+  <div class="project">
+    <h3><strong>Malayalam Voice Keyboard</strong></h3>
+    <p>A voice-enabled keyboard app designed for Malayalam speakers. Provides smooth typing, voice input, and predictive text for an improved communication experience.</p>
+  </div>
+
+  <div class="project">
+    <h3><strong>Promo App</strong></h3>
+    <p>A cross-platform Flutter app for showcasing and redeeming promotional offers. Includes features like user authentication, profile management, and dynamic item listings with filtering and sorting.</p>
+  </div>
+  
+   <h3><strong>Expense Manager App</strong></h3>
+    <p>A budget tracking app that helps users manage daily expenses, categorize spending, and monitor savings. Built with a clean design to make financial tracking simple and efficient.</p>
+  
+  </div>
+
+  <div class="project">
+    <h3><strong>Weather App</strong></h3>
+    <p>A real-time weather application providing forecasts, live updates, and detailed climate insights. It integrates with OpenWeather API to deliver accurate data in a modern UI.</p>
+  
+  </div>
+
+</section>
+
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:malikmuhammadawais13@gmail.com">malikmuhammadawais13@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></p>
-    <p>GitHub: <a href="https://github.com/MuhammadAwais-git?tab=repositories" target="_blank">github.com/MuhammadAwais-git</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/muhammad-awais-9a6621245" target="_blank">https://www.linkedin.com/in/muhammad-awais-9a6621245</a></p>
+    <p>GitHub: <a href="https://github.com/MuhammadAwais-git" target="_blank">github.com/MuhammadAwais-git</a></p>
   </section>
 
   <footer>
     <p>&copy; 2025 Muhammad Awais | Android Developer</p>
   </footer>
-
-  <script>
-    // Example JavaScript: Resize heading text
-    document.getElementsByTagName("h1")[0].style.fontSize = "6vw";
-  </script>
 </body>
 </html>
