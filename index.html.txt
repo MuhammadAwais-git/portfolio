@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Awais - Android Developer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #2d3436;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 { margin: 0; font-size: 2.5rem; }
+    header p { margin: 0.5rem 0 0; }
+
+    nav {
+      background: #636e72;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+      background: #fff;
+      margin-bottom: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h2 { color: #2d3436; margin-top: 0; }
+
+    .skills span {
+      display: inline-block;
+      background: #dfe6e9;
+      margin: 0.3rem;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+
+    .projects .project {
+      margin-bottom: 1.5rem;
+    }
+    .projects .project h3 {
+      margin-bottom: 0.3rem;
+    }
+    .projects .project a {
+      color: #0984e3;
+      text-decoration: none;
+    }
+    .projects .project a:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #2d3436;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Muhammad Awais</h1>
+    <p>Android Developer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am an Android developer specializing in Kotlin, passionate about creating modern, efficient, and scalable mobile applications. My expertise includes Android Jetpack, MVVM architecture, Room Database, Retrofit, and Coroutines. I focus on building clean, maintainable code and delivering user-friendly experiences. Always eager to learn and adopt the latest tools, I strive to craft applications that solve real-world problems and provide value to users.
+    </p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <span>Kotlin</span>
+    <span>Ads Integration</span>
+    <span>Android Jetpack</span>
+    <span>MVVM</span>
+    <span>Room DB</span>
+    <span>Retrofit</span>
+    <span>Coroutines</span>
+    <span>Git/GitHub</span>
+    <span>REST API</span>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Expense Manager App</h3>
+      <p>A budget tracker built with Kotlin, Room, and MVVM.</p>
+      <a href="https://github.com/yourusername/expense-manager" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project">
+      <h3>Weather App</h3>
+      <p>Real-time weather updates using Retrofit and OpenWeather API.</p>
+      <a href="https://github.com/yourusername/weather-app" target="_blank">View on GitHub</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:malikmuhammadawais13@gmail.com">malikmuhammadawais13@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></p>
+    <p>GitHub: <a href="https://github.com/MuhammadAwais-git?tab=repositories" target="_blank">github.com/MuhammadAwais-git</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Muhammad Awais | Android Developer</p>
+  </footer>
+
+  <script>
+    // Example JavaScript: Resize heading text
+    document.getElementsByTagName("h1")[0].style.fontSize = "6vw";
+  </script>
+</body>
+</html>
